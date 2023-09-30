@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "General Sans";
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#minicircle{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 22;
+}
+
+/* To give the appearing effect  */
+.bounding{
+    width: fit-content;
+    /* background-color: red; */
+    overflow: hidden;
+}
+.boundingelem{
+    transform: translateY(100%);
+}
+
+
+#main{
+    width: 100%;
+    
+}
+
+#hero{
+    width:100%;
+    height: 100vh;
+    background-color: black;
+    color: #fff;
+}
+#nav{
+    width: 100%;
+    padding: 20px 40px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2%;
+}
+#nav a{
+    
+    text-decoration: none;
+    font-size: 1.15em;
+    color: #fff;
+}
+
+#heading{
+    margin-top: 7%;
+    margin-left: 3%;
+}
+
+#heading h1{
+    opacity: .65;
+    line-height: 1;
+    font-family: "General Sans Medium";
+    font-size: 10.3vw;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+#heading #secondh1{
+    margin-left: 165px;
+    margin-top: -2.2%;
+}
+
+.blocktext{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.blocktext h5{
+    font-size: 1em;
+    text-align: right;
+} 
+
+#right-heading{
+    margin-top: 90px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#right-heading h5{
+    margin-top: 0.9vw;
+    font-size: 1vw;
+    text-align: right;
+}
+#herofooter{
+    bottom: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 3vw;
+}
+
+#herofooter a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1vw;
+}
+
+#iconset{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+#herofooter .circle{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #888;
+    color: #000;
+}
+
+/* Second Page */
+#second{
+    padding-top: 200px;
+    height: 135vh;
+    width: 100%;
+    background-color: black;
+    padding-right: 10vw;
+    padding-left: 3vw;
+    color: #fff;
+    
+}
+.elem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3vw 0;
+    border-top: 1px solid #888;
+    position: relative;
+}
+.elem h1{
+    font-size: 7vw;
+    opacity: 0.65;
+}  
+
+.last{
+    border-bottom: 1px solid #888;
+}
+
+.elem img{
+    z-index: 5;
+    position: absolute;
+    height:140%;
+    opacity: 0;
+    /* pointer events none karne se image jyada bahar move nhi karega  */
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+/* About page */
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    color: #fff;
+    padding: 10vw;
+    padding-left: 38vw;
+    width: 100%;
+    background-color: black;
+}
+
+#textabout{
+    width: 28rem;
+    font-size: 1.1rem;
+    line-height: 150%;
+}
+
+#textabout h5{
+    opacity: 0.6;
+}
+
+#about img{
+    width: 15vw;
+}
+
+#textabout a{
+    text-decoration: none;
+    border: 1.5px solid #fff;
+    color: #fff;
+    border-radius: 20px;
+    padding: 2px 15px;
+
+}
+#textabout a:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+#textabout p{
+    margin-bottom: 15px;
+}
+
+#lastone{
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 0 50px;
+    padding-bottom: 20px;
+}
+#pehla{
+    height: 200px;
+    font-size: 0.85rem;
+    line-height: 1.7;
+}
+#pehla h5{
+    opacity: 0.6;
+    font-size: .9rem;
+}
+#dusra{
+    display: flex;
+    justify-content: space-between;
+}
+#dusra .left{
+    display: flex;
+    gap: 2vw;
+    font-size: .9rem;
+    font-weight: light;
+}
+#dusra .right{
+    display: flex;
+    gap: 3vw;
+    font-size: 0.92rem;
+}
+#dusra .right a{
+    text-decoration: none;
+    color: #fff;
+}
